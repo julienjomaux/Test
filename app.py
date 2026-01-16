@@ -5,14 +5,13 @@ from decouple import config  # <-- Add this line
 
 st.title("My First Streamlit App :wave:")
 # Add a header and some text
-st.header("An Interactive Example")
-st.write("This simple app demonstrates a text input, a button, and a data chart.")
+st.header("A test")
 
 stripe_link = config('STRIPE_CHECKOUT_LINK')  # Get value safely
 
 st.markdown(
     f"""
-    This is a test for app with payments
+    This is a test for app with payments !
 
     #### [Sign Up Now :metal:]({stripe_link})
     """
