@@ -2,8 +2,20 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-# Set the title of the app
 st.title("My First Streamlit App 👋")
+st.markdown(
+        f"""
+        Chat with Tyrion Lannister to advise you on:
+        - Office Politics
+        - War Strategy
+        - The Targaryens
+
+
+        #### [Sign Up Now 🤘🏻]({config('STRIPE_CHECKOUT_LINK')})
+        """
+    )
+# Set the title of the app
+
 
 # Add a header and some text
 st.header("An Interactive Example")
