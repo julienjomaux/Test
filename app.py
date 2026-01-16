@@ -12,10 +12,7 @@ stripe_link = config('STRIPE_CHECKOUT_LINK')  # Get value safely
 
 st.markdown(
     f"""
-    Chat with Tyrion Lannister to advise you on:
-    - Office Politics
-    - War Strategy
-    - The Targaryens
+    This is a test for app with payments
 
     #### [Sign Up Now :metal:]({stripe_link})
     """
