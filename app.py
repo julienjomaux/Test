@@ -1,19 +1,22 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from decouple import config  # <-- Add this line
 
-st.title("My First Streamlit App 👋")
+st.title("My First Streamlit App :wave:")
+
+stripe_link = config('STRIPE_CHECKOUT_LINK')  # Get value safely
+
 st.markdown(
-        f"""
-        Chat with Tyrion Lannister to advise you on:
-        - Office Politics
-        - War Strategy
-        - The Targaryens
+    f"""
+    Chat with Tyrion Lannister to advise you on:
+    - Office Politics
+    - War Strategy
+    - The Targaryens
 
-
-        #### [Sign Up Now 🤘🏻]({config('STRIPE_CHECKOUT_LINK')})
-        """
-    )
+    #### [Sign Up Now :metal:]({stripe_link})
+    """
+)
 # Set the title of the app
 
 
